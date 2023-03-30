@@ -52,20 +52,20 @@
         </nav>
     </header>
 
-    <script>
-        // Selecting the iframe element
-        var iframe = document.getElementById("myifix");
-        
-        // Adjusting the iframe height onload event
-        iframe.onload = function(){
-            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-        }
-        </script>
+ 
     
  
-<iframe  id="myifix" src="https://www.ifixit.com/Guide/embed/814/full" allowfullscreen="" style="border: 0px; width: 100%;"></iframe>
+<iframe id="myifix" src="https://www.ifixit.com/Guide/embed/814/full" allowfullscreen="true" style="border: 0px; width: 100%;"></iframe>
 
+<script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("myifix");
     
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+    </script>
 
     <div class="loader-block">
         <div class="loader-back alt-bg"></div>
