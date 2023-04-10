@@ -1,0 +1,11 @@
+<script>
+    const url = 'https://api.sunrise-sunset.org/json?lat=33.6894&lng=-78.8868'; // replace with Myrtle Beach coordinates
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    const sunrise = new Date(data.results.sunrise);
+    const sunset = new Date(data.results.sunset);
+    console.log(`Sunrise: ${sunrise.toLocaleTimeString()}, Sunset: ${sunset.toLocaleTimeString()}`);
+  })
+  .catch(error => console.error(error));
+  </script>
