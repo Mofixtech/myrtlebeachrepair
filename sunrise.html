@@ -1,12 +1,8 @@
-<h1> Sunrise / Sunset Tables</h1>
-<script>
-    const url = 'https://api.sunrise-sunset.org/json?lat=33.6894&lng=-78.8868'; // replace with Myrtle Beach coordinates
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    const sunrise = new Date(data.results.sunrise);
-    const sunset = new Date(data.results.sunset);
-    console.log(`Sunrise: ${sunrise.toLocaleTimeString()}, Sunset: ${sunset.toLocaleTimeString()}`);
-  })
-  .catch(error => console.error(error));
-  </script>
+<canvas id="game-canvas" width="800" height="600"></canvas>
+
+<script>const canvas = document.getElementById('game-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    ctx.fillStyle = 'red';
+    ctx.fillRect(10, 10, 50, 50);
+    </script>
